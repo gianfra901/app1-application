@@ -1,9 +1,7 @@
 name: Create Pull Request on Branch Creation
 
 on:
-  create:
-    branches:
-      - '*'
+  workflow_dispatch:
 
 jobs:
   create-pull-request:

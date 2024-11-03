@@ -20,3 +20,6 @@ jobs:
       hv-certificate-path: internal-certificates/demosanddonnuts.online
       az-resource-group-name: RSGRDEMO
       az-web-app-name: demosanddonuts
+      jira-issue: KAN-5
+              
+    
