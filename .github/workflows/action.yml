@@ -1,0 +1,22 @@
+name: APP1 - Automate Implement Certificate from HV
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  # push:
+  #   branches: [ "main" ]
+  # pull_request:
+  #   branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  automate-certificate:
+    uses: gianfra901/demosanddonnuts2024/.github/workflows/certificate.yml@main
+    secrets: inherit
+    with:
+      hv-namespace: admin
+      hv-certificate-path: internal-certificates/demosanddonnuts.online
+      az-resource-group-name: RSGRDEMO
+      az-web-app-name: demosanddonuts
