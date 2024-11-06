@@ -23,6 +23,6 @@ jobs:
       az-resource-group-name: RSGRDEMO
       az-web-app-name: demosanddonuts
       jira-project-id: KAN
-      jira-issue: ${{ github.event.client_payload.jira-issue-id }}"
+      jira-issue: ${{ github.event.client_payload.jira-issue-id }}
               
     
