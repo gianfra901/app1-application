@@ -1,7 +1,7 @@
 import { test } from '@playwright/test';
 import { chromium } from 'playwright';
 
-const url = 'https://';
+const url = 'https://demosanddonnuts.online';
 
 test('has certificate', async () => {
   const browser = await chromium.launch({ headless: true });
