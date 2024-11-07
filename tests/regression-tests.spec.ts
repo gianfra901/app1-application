@@ -1,9 +1,9 @@
 import { test } from '@playwright/test';
 import { chromium } from 'playwright';
 
-const url = 'https://demosanddonnuts.online';
+const url = 'https://';
 
-test('has certificated', async () => {
+test('has certificate', async () => {
   const browser = await chromium.launch({ headless: true });
   const context = await browser.newContext({
     ignoreHTTPSErrors: false // Ensure SSL errors are not ignored
