@@ -2,7 +2,7 @@ name: Implement Certificate from HV - App Services
 
 on:
     repository_dispatch:
-      types: [deploy-event]    
+      types: [deploy-event-45]    
 
 jobs:
   automate-certificate:
