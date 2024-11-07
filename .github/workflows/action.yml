@@ -1,15 +1,6 @@
-name: APP1 - Automate Implement Certificate from HV
+name: Implement Certificate from HV - App Services
 
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  # push:
-  #   branches: [ "main" ]
-  # pull_request:
-  #   branches: [ "main" ]
-
-  # Allows you to run this workflow manually from the Actions tab
-  # workflow_dispatch:
     repository_dispatch:
       types: [deploy-event]    
 
@@ -24,10 +15,3 @@ jobs:
       az-web-app-name: ${{ github.event.client_payload.az-web-app }}
       jira-project-id: ${{ github.event.client_payload.jira-project-id }}
       jira-issue: ${{ github.event.client_payload.jira-issue-id }}
-              
-    
-      # hv-namespace: admin
-      # hv-certificate-path: internal-certificates/demosanddonnuts.online
-      # az-resource-group-name: RSGRDEMO
-      # az-web-app-name: demosanddonuts
-      # jira-project-id: KAN      
